@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>Website Personal</title>
+</head>
+
+<body>
+    <header>
+        <button class="mobile-menu-button" onclick="toggleMobileMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </button>
+
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skill.html">Skills</a></li>
+                <li><a href="article.html">Article</a></li>
+            </ul>
+        </div>
+
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skill.html">Skills</a></li>
+                    <li><a href="article.html">Article</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="skill">
+            <div class="line1">
+                <div class="html">
+                    <img src="gambar/html.png">
+                    <h2>HTML</h2>
+                    <p> Programming</p>
+                </div>
+                <div class="css">
+                    <img src="gambar/files.png">
+                    <h2>CSS</h2>
+                    <p> Programming</p>
+                </div>
+            </div>
+            <div class="line2">
+                <div class="js">
+                    <img src="gambar/js.png">
+                    <h2>Java Script</h2>
+                    <p> Programming</p>
+                </div>
+                <div class="figma">
+                    <img src="gambar/figma.png">
+                    <h2>Figma</h2>
+                    <p> Design</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="sosmed">
+            <a target="_blank" href="https://instagram.com/aljundi_ihsan?igshid=MzMyNGUyNmU2YQ==">
+                <img class="icon-logo" src="gambar/instagram.png">
+            </a>
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100061114089211&mibextid=ZbWKwL">
+                <img class="icon-logo" src="gambar/facebook.png">
+            </a>
+            <a target="_blank" href="http://www.linkedin.com/in/ihsanul-insan-aljundi-b188891b7">
+                <img class="icon-logo" src="gambar/linkedin-logo.png">
+            </a>
+            <a target="_blank" href="https://github.com/IhsanAljundi">
+                <img class="icon-logo" src="gambar/github-sign.png">
+            </a>
+        </div>
+        <p>
+            &copy; 2023 Ihsanul Insan Aljundi
+        </p>
+    </footer>
+    <script>
+        function toggleMobileMenu() {
+            var mobileMenu = document.querySelector('.mobile-menu');
+            mobileMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+
+
+</html>

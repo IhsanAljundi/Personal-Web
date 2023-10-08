@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>Website Personal</title>
+</head>
+
+<body>
+    <header>
+        <button class="mobile-menu-button" onclick="toggleMobileMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </button>
+
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skill.html">Skills</a></li>
+                <li><a href="article.html">Article</a></li>
+            </ul>
+        </div>
+
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skill.html">Skills</a></li>
+                    <li><a href="article.html">Article</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="berita">
+            <div class="berita1">
+                <img src="gambar/berita 1.jpeg">
+                <p><strong>Jakarta</strong> - Presiden Joko Widodo (Jokowi) menerima eks Menteri Pertanian (Mentan) Syahrul Yasin Limpo (SYL) di Istana Kepresidenan. Begini suasananya.
+                Pantauan detikcom, Minggu (8/10/2023), Jokowi ditemani Mensesneg Pratikno bertemu SYL di salah satu ruangan di Istana Merdeka. Jokowi duduk di tengah dan berbincang dengan SYL.
+                    
+                Pratikno duduk di sebelah kiri Jokowi dan SYL duduk di sebelah kanan Jokowi. Jokowi dan Pratikno mengenakan pakaian berwarna putih, sedangkan SYL memakai batik.
+                    </p>
+            </div>
+            <div class="berita2">
+                <img src="gambar/berita2.jpeg">
+                <p><strong>Jakarta</strong> - Beredar foto Ketua KPK Firli Bahuri bertemu dengan mantan Menteri Pertanian (Mentan) Syahrul Yasin Limpo atau SYL di sebuah lapangan bulu tangkis. Mantan atlet badminton Eddy Hartono mengaku ada dalam momen tersebut. Begini kesaksiannya.
+                    Pernyataan Eddy soal pertemuan Firli dengan SYL tersebar di kalangan awak media. detikcom kemudian mengonfirmasi langsung ke Eddy terkait pernyataannya itu.
+                    
+                    Eddy menuturkan pertemuan antara Firli dan SYL terjadi pada 2022. Dia tidak mengingat persis di bulan apa pertemuan Firli dan SYL terjadi, tapi dia yakin pertemuan itu terjadi sebelum April.
+                    "Tahunnya masih 2022, bulannya saya lupa, tapi yang jelas di bawah April. Karena patokan saya, satu yang lawan mainnya Pak Firli masih main, karena April ke Amerika. Artinya antara Maret atau Februari," kata Eddy, kepada wartawan, Minggu (8/10/2023).
+                    </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="sosmed">
+            <a target="_blank" href="https://instagram.com/aljundi_ihsan?igshid=MzMyNGUyNmU2YQ==">
+                <img class="icon-logo" src="gambar/instagram.png">
+            </a>
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100061114089211&mibextid=ZbWKwL">
+                <img class="icon-logo" src="gambar/facebook.png">
+            </a>
+            <a target="_blank" href="http://www.linkedin.com/in/ihsanul-insan-aljundi-b188891b7">
+                <img class="icon-logo" src="gambar/linkedin-logo.png">
+            </a>
+            <a target="_blank" href="https://github.com/IhsanAljundi">
+                <img class="icon-logo" src="gambar/github-sign.png">
+            </a>
+        </div>
+        <p>
+            &copy; 2023 Ihsanul Insan Aljundi
+        </p>
+    </footer>
+    <script>
+        function toggleMobileMenu() {
+            var mobileMenu = document.querySelector('.mobile-menu');
+            mobileMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+
+
+</html>

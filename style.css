@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,500&display=swap');
+
+body {
+    padding: 0 15%;
+    margin: 0 auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+}
+
+.navbar {
+    width: 100%;
+    top: 0;
+    padding: 2% 0;
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+}
+
+nav ul {
+    display: flex;
+    gap: 12%;
+    list-style: none;
+    transition: left 0.3s;
+}
+
+ul li a {
+    color: #0d6b9e;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-weight:500;
+    font-size:x-large;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    color:#0d6b9e;
+    text-decoration:underline;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.hero-about{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+    gap: 5%;
+    margin-top: 12%;
+}
+
+.profile-img{
+    margin-top: 5%;
+}
+.profile-img img{
+    border-radius: 20%;
+    height:400px;
+}
+.name {
+    margin-top: 17%;
+    font-size:xxx-large;
+    font-weight:600;
+}
+
+
+.profile p{
+    text-align: justify;
+}
+
+.profile h1{
+    font-size: xxx-large;
+    font-weight: 600;
+}
+
+.profile p{
+    font-size: x-large;
+    font-weight: 400;
+}
+.desc {
+    margin-top: -4%;;
+    font-size: xx-large;
+    font-weight:400;
+}
+
+.desc-profile {
+    margin-top: -4%;;
+    font-size:x-large;
+    font-weight:400;
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+    text-align: center;
+}
+
+.skill h2{
+    font-size: x-large;
+    color: white;
+}
+
+.skill p{
+    font-size: large;
+    font-weight: 400;
+    color: white;
+}
+
+.line1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.line2{
+    margin-top: 7%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill img{
+    height: 150px;
+    width: 150px;
+}
+
+.berita {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+}
+
+.berita1{
+    border: solid 1px;
+    border-color: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+.berita2{
+    margin-top: 5%;
+    border: solid 1px;
+    border-color: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+.berita p{
+    color: white;
+    font-size: large;
+    text-align: justify;
+}
+
+.more a{
+    font-weight: 400;
+    font-size: xx-large;
+    color: #0d6b9e;
+    text-decoration: none;
+}
+
+.more a:hover {
+    color:#0d6b9e;
+    text-decoration:underline;
+}
+
+.sosmed {
+    margin-top: 10%;
+}
+
+.icon-logo {
+    margin-right: 3rem;
+}
+
+footer {
+    font-size:large;
+    color: white;
+    margin-top: 5%;
+}
+
+
+.mobile-menu-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-menu li {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 2% 5%; 
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: block;
+    }
+
+    .mobile-menu.active {
+        display: block;
+    }
+
+    .mobile-menu.active ul {
+        display: block;
+    }
+
+    .hero-about {
+        flex-direction: column-reverse; 
+    }
+
+    .profile-img {
+        margin-top: 0; 
+    }
+
+    .profile {
+        text-align: center; 
+    }
+
+    .profile h1 {
+        font-size: x-large; 
+    }
+
+    .profile p {
+        font-size: large; 
+    }
+    .line1,
+    .line2 {
+        flex-direction: column; /
+        align-items: center; 
+    }
+
+    .line2 {
+        margin-top: 5%; 
+    }
+    
+    .skill .html,
+    .skill .css,
+    .skill .js,
+    .skill .figma {
+        margin-bottom: 10%; 
+    }
+
+    .berita1 img,
+    .berita2 img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .berita1,
+    .berita2 {
+        margin-top: 5%; 
+        width: 100%; 
+        padding: 10px; 
+    }
+
+    .berita p {
+        font-size: medium; 
+    }
+}
